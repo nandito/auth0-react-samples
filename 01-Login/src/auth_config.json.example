@@ -1,7 +1,4 @@
 {
   "domain": "{DOMAIN}",
-  "clientId": "{CLIENT_ID}",
-  "auth0UserEmail": "{AUTH0_USER_EMAIL}",
-  "auth0UserPassword": "{AUTH0_USER_PASS}",
-  "auth0LogoutUrl": "{AUTH0_LOGOUT_URL}"
+  "clientId": "{CLIENT_ID}"
 }

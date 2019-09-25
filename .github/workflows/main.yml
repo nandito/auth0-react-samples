@@ -8,6 +8,12 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Install dependencies and run e2e tests (frontend tests)
+      env: # Or as an environment variable
+        REACT_APP_DOMAIN: ${{ secrets.auth0domain }}
+        REACT_APP_CLIENT_ID: ${{ secrets.clientId }}
+        CYPRESS_AUTH0_USER_EMAIL: ${{ secrets.auth0UserEmail }}
+        CYPRESS_AUTH0_USER_PASS: ${{ secrets.auth0UserPassword }}
+        CYPRESS_AUTH0_LOGOUT_URL: ${{ secrets.auth0LogoutUrl }}
       run: |
         cd 01-Login
         yarn install
