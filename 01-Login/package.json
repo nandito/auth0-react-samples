@@ -6,7 +6,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.0.2",
@@ -22,7 +23,9 @@
     "react-scripts": "3.0.1",
     "reactstrap": "^8.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cypress": "^3.4.1"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
