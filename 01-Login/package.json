@@ -7,7 +7,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:ci": "start-server-and-test serve :3000 cypress:run",
+    "serve": "yarn build && serve --no-clipboard --single --listen 3000 build"
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.0.2",
@@ -24,7 +27,9 @@
     "reactstrap": "^8.0.0"
   },
   "devDependencies": {
-    "cypress": "^3.4.1"
+    "cypress": "^3.4.1",
+    "serve": "^11.1.0",
+    "start-server-and-test": "^1.10.0"
   },
   "eslintConfig": {
     "extends": "react-app"
