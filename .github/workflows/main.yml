@@ -1,16 +1,12 @@
 name: CI
 
-on:
-  pull_request:
-    branches:
-    - master
+on: pull_request
 
 jobs:
   tests:
-
     runs-on: ubuntu-latest
-
     steps:
+    - uses: actions/checkout@v1
     - name: Install dependencies and run e2e tests (frontend tests)
       run: |
         cd 01-Login
