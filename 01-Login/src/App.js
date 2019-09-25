@@ -18,6 +18,8 @@ import "./App.css";
 import initFontAwesome from "./utils/initFontAwesome";
 initFontAwesome();
 
+// e2e should work!
+
 const App = () => {
   const { loading } = useAuth0();
 
