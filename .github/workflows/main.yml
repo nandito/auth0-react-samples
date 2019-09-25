@@ -15,6 +15,6 @@ jobs:
         CYPRESS_AUTH0_USER_PASS: ${{ secrets.auth0UserPassword }}
         CYPRESS_AUTH0_LOGOUT_URL: ${{ secrets.auth0LogoutUrl }}
       run: |
-        cd 01-Login
+        cd login
         yarn install
         yarn run cypress:ci
