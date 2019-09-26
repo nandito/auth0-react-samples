@@ -2,6 +2,10 @@
 
 describe('Profile', () => {
   before(() => {
+    cy.log('CYPRESS ENV')
+    cy.log(Cypress.env())
+    cy.log('PROCESS ENV')
+    cy.log(process.env)
     // to make sure user is logged out
     cy.request(Cypress.env('CYPRESS_AUTH0_LOGOUT_URL'));
   });
